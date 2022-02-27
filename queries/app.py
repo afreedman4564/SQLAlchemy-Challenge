@@ -4,6 +4,7 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
+from sqlalchemy import Column, Integer, String, Float
 import numpy as np
 import datetime as dt
 
@@ -17,6 +18,11 @@ engine = create_engine("sqlite:///../Resources/hawaii.sqlite")
 Base = automap_base()
 Base.prepare(engine, reflect = True)
 Station = Base.classes.station
+
+# class Measurement(Base):
+#     __tablename__ = 'measurement'
+#     date = Column(primary_key = True)
+
 Measurement = Base.classes.measurement
 session = Session(engine)
 
@@ -36,7 +42,7 @@ def home():
 
 @app.route("/api/v1.0/precipitation")
 def precipitation():
-    
+
     precipitation_results = session.query(Measurement.date, Measurement.prcp).all()
 
     session.close()
