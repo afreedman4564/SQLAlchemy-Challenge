@@ -34,31 +34,31 @@ Climate analysis and exploration - Honolulu Hawaii.
     - convert to DataFrame
     - calculate most recent date and use strptime to allow query
 
-    ![](/Images/MostRecentDate.png)
+![](/Images/MostRecentDate.png)
 
     - calculate date 12 months prior to most recent date
     - use session query to grab observations with time frame set by most recent date and start date
     - set date as index
     - plot trend using precipitation against date
 
-    ![](/Images/PrecipitationTrend.png)
+![](/Images/PrecipitationTrend.png)
 
     - use describe to calculate precipitation statistics
 
-    ![](/Images/PrecipitationStatistics.png)
+![](/Images/PrecipitationStatistics.png)
 
 # Station Analysis
 ## Query and list stations
 
 ## Calculate number of stations using count function
 
-    ![](/Images/StationCount..png)
+![](/Images/StationCount..png)
 
 ## calculate distribution of observations by station
     - create variable for station count to inpute into session query
     - use func.count along with group by to perform calculation at station level
 
-    ![](/Images/StationDistribution.png)
+![](/Images/StationDistribution.png)
 
 ## create plot trending temperature by date
     - calculate date 12 months prior to most recent date
@@ -66,7 +66,7 @@ Climate analysis and exploration - Honolulu Hawaii.
     - set date as index
     - plot trend using precipitation against date
 
-    ![](/Images/TemperatureTrend.png)
+![](/Images/TemperatureTrend.png)
 
 # Create apps with routes, sharing query results vis a vi app.py
     - create homepage listing all related routes
