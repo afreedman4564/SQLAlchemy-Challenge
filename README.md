@@ -52,7 +52,7 @@ Climate analysis and exploration - Honolulu Hawaii.
 
 ## Calculate number of stations using count function
 
-    ![](/Images/StationCount.png)
+    ![](/Images/StationCount..png)
 
 ## calculate distribution of observations by station
     - create variable for station count to inpute into session query
