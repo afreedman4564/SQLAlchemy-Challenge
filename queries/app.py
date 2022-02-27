@@ -24,7 +24,7 @@ Station = Base.classes.station
 #     date = Column(primary_key = True)
 
 Measurement = Base.classes.measurement
-session = Session(engine)
+session = Session(bind = engine)
 
 # create app
 app = Flask(__name__)
