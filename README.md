@@ -89,3 +89,34 @@ Climate analysis and exploration - Honolulu Hawaii.
         - create date variables, using strptime to allow querying
         - allow jsonification using Numpy ravel function
 
+# Temperature Analysis
+    - create Pandas dataframe, converting date to Datetime format
+    - Sort on date
+    - create June and December dataframes using .loc
+    - using Scipy to perform t-test comparing temperature in June with December
+
+![](/Images/JuneTempVsDecTemp.png)
+
+# Temperature Analysis II
+    - evaluate temperature from August 1st through 7th
+    - use calc temps definition, leveraging func.avg, min and max
+    - calculate values to support yerr element of errorbar plot
+
+![](/Images/TripAvgTemp.png)
+
+# Daily Rainfall Analysis
+    - use filter to 'join' tables for station and measurement
+    - print list of stations, elevation precipitation latitude and longitude
+
+![](/Images/RainfallData.png)
+
+# Daily Normals
+    - Use daily_normals definition to gather average temp, min and max for calendars days during travel range
+    - use for loop to convert tuple into list
+    - convert into dataframe, adding a new variable 'mmdd'
+    - index on 'mmdd'
+    - plot using plot.area, without stack
+
+![](/Images/AreaPlot.png)
+
+
